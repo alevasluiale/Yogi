@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/text_wallet" />
+        <item
+            android:id="@+id/nav_navigation_products"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/text_products" />
+        <item
+            android:id="@+id/nav_add_products"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/text_add_products" />
+        <item
+            android:id="@+id/nav_add_users"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/text_add_users" />
+        <item
+            android:id="@+id/nav_delete_users"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/text_delete_users" />
+        <item
+            android:id="@+id/nav_approve_transactions"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/text_approve_transactions" />
+    </group>
+</menu>

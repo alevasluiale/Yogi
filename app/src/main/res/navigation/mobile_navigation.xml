@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_navigation_products">
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.licenta.yogi.ui.wallet.WalletFragment"
+        android:label="@string/text_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/nav_add_products"
+        android:name="com.licenta.yogi.ui.addproducts.AddProductsFragment"
+        android:label="@string/text_add_products"
+        tools:layout="@layout/fragment_add_products" />
+    <fragment
+        android:id="@+id/nav_navigation_products"
+        android:name="com.licenta.yogi.ui.productsnavigation.ProductsNavigationFragment"
+        android:label="@string/text_products"
+        tools:layout="@layout/fragment_products_navigation" />
+    <fragment
+        android:id="@+id/nav_add_users"
+        android:name="com.licenta.yogi.ui.addusers.AddUsersFragment"
+        android:label="@string/text_add_users"
+        tools:layout="@layout/fragment_add_users" />
+
+    <fragment
+        android:id="@+id/nav_delete_users"
+        android:name="com.licenta.yogi.ui.deleteusers.DeleteUsersFragment"
+        android:label="@string/text_delete_users"
+        tools:layout="@layout/fragment_delete_users" />
+
+    <fragment
+        android:id="@+id/nav_approve_transactions"
+        android:name="com.licenta.yogi.ui.approvetransactions.ApproveTransactionsFragment"
+        android:label="@string/text_approve_transactions"
+        tools:layout="@layout/fragment_approve_transactions" />
+</navigation>

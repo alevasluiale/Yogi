@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Yogi</string>
+    <string name="login_button">Login</string>
+    <string name="title_activity_wallet">WalletActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="title_activity_navigation">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="text_add_users">Add Users</string>
+    <string name="text_products">Products</string>
+    <string name="text_add_products">Add Products</string>
+    <string name="text_wallet">Wallet</string>
+    <string name="text_delete_users">Delete Users</string>
+    <string name="text_approve_transactions">Approve Transactions</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="user_email">User Email</string>
+    <string name="password">Password</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="user_address">User Address</string>
+    <string name="user_city">User City</string>
+    <string name="user_country">Select User Country</string>
+    <string name="user_type">User Type</string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="user_types">
+        <item>Seller</item>
+        <item>Distributor</item>
+        <item>Warehouse</item>
+        <item>Buyer</item>
+    </string-array>
+</resources>

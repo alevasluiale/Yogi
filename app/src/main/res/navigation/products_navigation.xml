@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/products_navigation"
+    app:startDestination="@+id/nav_products">
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.licenta.yogi.ui.products.ProductsFragment"
+        android:label="@string/text_products"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_nav_products_to_nav_view_product_item"
+            app:destination="@id/nav_view_product_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_view_product_item"
+        android:name="com.licenta.yogi.ui.viewproductitem.ViewProductItemFragment"
+        android:label="Product"
+        tools:layout="@layout/fragment_product_item_view" >
+        <action
+            android:id="@+id/action_nav_view_product_item_to_nav_view_list_of_product_owners"
+            app:destination="@id/nav_view_list_of_product_owners" />
+        <action
+            android:id="@+id/action_nav_view_product_item_to_nav_view_transfer_product"
+            app:destination="@id/nav_view_transfer_product" />
+        <action
+            android:id="@+id/action_nav_view_product_item_to_nav_view_initial_product_owner"
+            app:destination="@id/nav_view_initial_product_owner" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_view_transfer_product"
+        android:name="com.licenta.yogi.ui.transferproduct.TransferProductFragment"
+        android:label="Transfer Product"
+        tools:layout="@layout/fragment_transfer_product" >
+        <action
+            android:id="@+id/action_nav_view_transfer_product_to_nav_view_product_item"
+            app:destination="@id/nav_view_product_item" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_view_initial_product_owner"
+        android:name="com.licenta.yogi.ui.displayowner.DisplayInitialOwnerFragment"
+        android:label="Initial Owner"
+        tools:layout="@layout/fragment_display_initial_owner" >
+        <action
+            android:id="@+id/action_nav_view_initial_product_owner_to_nav_view_product_item"
+            app:destination="@id/nav_view_product_item" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_view_list_of_product_owners"
+        android:name="com.licenta.yogi.ui.listofowners.ListOfOwnersForProductFragment"
+        android:label="Owners of product"
+        tools:layout="@layout/fragment_product_list_of_owners" >
+        <action
+            android:id="@+id/action_nav_view_list_of_product_owners_to_nav_view_product_item"
+            app:destination="@id/nav_view_product_item" />
+    </fragment>
+
+</navigation>
